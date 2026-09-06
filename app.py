@@ -22,7 +22,8 @@ st.write("Your AI-powered college study assistant")
 # -----------------------------
 # Student Name
 # -----------------------------
-name = st.text_input("👤 Enter your name")
+name = st.query_params.get("name", "")
+name = st.text_input("👤 Enter your name", value=name)
 
 if name:
     st.success(f"Welcome, {name}! 😊")
