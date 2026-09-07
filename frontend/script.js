@@ -21,6 +21,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     message.textContent = "Login successful! Welcome " + name + " 🎉";
 
     setTimeout(function() {
-     window.location.href = "http://localhost:8506/?name=" + encodeURIComponent(name);
+     window.location.href = "http://localhost:8501/?name=" + encodeURIComponent(name);
     }, 1000);
 });
